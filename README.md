@@ -1,2 +1,4 @@
 # odooenv
-A Docker iamge build with Odoo develop environment
+A Docker image build with Odoo develop environment
+
+
