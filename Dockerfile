@@ -15,4 +15,10 @@ RUN apt-get remove -y odoo  \
     && rm -rf /var/lib/apt/lists/* odoo.deb
 
 
+RUN mkdir -p /mnt/dev-addons \
+    && chown -R odoo /mnt/dev-addons
+
+VOLUME ["/mnt/dev-addons"]
+
+
 USER odoo
